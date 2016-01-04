@@ -1,5 +1,13 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
 
-# Export all names
-exportPattern(".")
+#functions
+exportPattern(Niche, NicheOverlap, OverlapTaxa)
+
+importFrom(IDPmisc, iplot, IDPcolorRamp)
+
+importFrom(stats, na.exclude, lm, aggregate, sd)
+
+importFrom(utils, write.table, write.csv, write.csv2)
+
+importFrom(graphics, par, polygon, mtext, locator, plot, points)
+
+importFrom(grDevices, dev.size, dev.cur, dev.off, hsv)
