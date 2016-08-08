@@ -5,14 +5,6 @@ na = "NA", dec = ",",row.names = FALSE,fileEncoding = ""){
 datos<-na.exclude(data)
 
 
-if (missing(digits)) digits<-2 else digits<-digits
-if (missing(file1)) file1= "Overlap among taxa.csv" else file1 = file1
-if (missing(file2)) file2= "Mean overlap among taxa.csv" else file2 = file2
-if (missing(na)) na="NA" else na=na
-if (missing(dec)) dec="," else dec=dec
-if (missing(row.names)) row.names=FALSE else row.names=row.names
-if (missing(fileEncoding)) fileEncoding="" else fileEncoding=fileEncoding
-
 
 datosD<-subset(datos[,1:5], !duplicated(datos$Species))
 datosD<-datosD[order(datosD[,1],datosD[,2],datosD[,3],datosD[,4],datosD[,5]) , ]

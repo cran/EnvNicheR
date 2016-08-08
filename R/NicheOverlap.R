@@ -9,31 +9,6 @@ legend=TRUE){
 datos<-na.exclude(data)
 
 
-
-if (missing(Level2)) Level2<-Level1 else Level2<-Level2
-if (missing(colA)) colA<-hsv(h=0,s=1,v=1, alpha=0.4) else colA<-colA
-if (missing(colB)) colB<-hsv(h=0.7,s=1,v=1, alpha=0.4) else colB<-colB
-if (missing(xlab)) xlab<-"Polar coordinate X in pixels" else xlab<-xlab
-if (missing(ylab)) ylab<-"Polar coordinate Y in pixels" else ylab<-ylab
-if (missing(cex)) cex<-1.57 else cex<-cex
-if (missing(cex.lab)) cex.lab<-1.5 else cex.lab<-cex.lab
-if (missing(font.lab)) font.lab<-1 else font.lab<-font.lab
-if (missing(main)) main<-"" else main<-main
-if (missing(cex.main)) cex.main<-2 else cex.main<-cex.main
-if (missing(font.main)) font.main<-2 else font.main<-font.main
-if (missing(family)) family<-"serif" else family<-family
-if (missing(digits)) digits<-2 else digits<-digits
-if (missing(xlegend)) xlegend<-"topleft" else xlegend<-xlegend
-if (missing(ylegend)) ylegend<-NULL else ylegend<-ylegend
-if (missing(pch)) pch<-15 else pch<-pch
-if (missing(bty)) bty<-"n" else bty<-bty
-if (missing(text.font)) text.font<-3 else text.font<-text.font
-if (missing(cex.legend)) cex.legend<-1.2 else cex.legend<-cex.legend
-if (missing(ncol)) ncol<-1 else ncol<-ncol
-if (missing(x.intersp)) x.intersp<-1 else x.intersp<-x.intersp
-if (missing(y.intersp)) y.intersp<-1 else y.intersp<-y.intersp
-if (missing(legend)) legend<-TRUE else legend<-legend
-
 A<-subset(datos,datos[,Level1] %in% Taxon1)
 B<-subset(datos,datos[,Level2] %in% Taxon2)
 

@@ -65,7 +65,7 @@ area.}
 data(Polar.coordinates)
 
 NicheOverlap(Polar.coordinates, Level1="Species", Taxon1="Panthera onca",
-Taxon2="Panthera leo", xlegend="topright")
+Taxon2="Panthera leo")
 
 #Remove the data set
 rm(Polar.coordinates)

@@ -8,16 +8,9 @@ file1 = "List of species.csv", file2 = "Environmental variables.csv", file3 = "P
 na = "NA", dec = ",", row.names = FALSE, fileEncoding = ""){
 
 if (requireNamespace("IDPmisc", quietly = TRUE)) {
-IDPmisc::iplot
 IDPmisc::IDPcolorRamp
 }
-else{
-## do something else not involving IDPmisc.
-}
 
-
-
-if (missing(cor)) cor=TRUE else cor=cor
 
 
 datos<-na.exclude(data)
@@ -80,40 +73,6 @@ selection<-datosT3
 datos<-data.frame(datos[,1:7],selection)
 
 
-if (missing(d.main)) d.main=0.5 else d.main=d.main
-if (missing(xlab)) xlab="Polar coordinate X in pixels" else xlab=xlab
-if (missing(ylab)) ylab="Polar coordinate Y in pixels" else ylab=ylab
-if (missing(cex.labS)) cex.labS=1.5 else cex.labS=cex.labS
-if (missing(cex.labB)) cex.labB=1.5 else cex.labB=cex.labB
-if (missing(font.lab)) font.lab=1 else font.lab=font.lab
-if (missing(main)) main="" else main=main
-if (missing(cex.main)) cex.main=2 else cex.main=cex.main
-if (missing(font.main)) font.main=2 else font.main=font.main
-if (missing(nlab.xaxis)) nlab.xaxis=5 else nlab.xaxis=nlab.xaxis
-if (missing(nlab.yaxis)) nlab.yaxis=5 else nlab.yaxis=nlab.yaxis
-if (missing(minL.axis)) minL.axis=3 else minL.axis=minL.axis
-if (missing(las)) las=1 else las=las
-if (missing(border)) border=FALSE else border=border
-if (missing(tcl)) tcl=-0.3 else tcl=tcl
-if (missing(boxplot)) boxplot=TRUE else boxplot=boxplot
-if (missing(outline)) outline=FALSE else outline=outline
-if (missing(range)) range=1.5 else range=range
-if (missing(width)) width=NULL else width=width
-if (missing(varwidth)) varwidth=FALSE else varwidth=varwidth
-if (missing(plot)) plot=TRUE else plot=plot
-if (missing(pars)) pars=list(boxwex = 0.8, staplewex = 0.5, outwex = 0.5) else pars=pars
-if (missing(cex.boxplot)) cex.boxplot=1.5 else cex.boxplot=cex.boxplot
-if (missing(family)) family="serif" else family=family
-if (missing(line)) line=1 else line=line
-if (missing(file1)) file1= "List of species.csv" else file1 = file1
-if (missing(file2)) file2= "Environmental variables.csv" else file2 = file2
-if (missing(file3)) file3= "Polar coordinates.csv" else file3 = file3
-if (missing(na)) na="NA" else na=na
-if (missing(dec)) dec="," else dec=dec
-if (missing(row.names)) row.names=FALSE else row.names=row.names
-if (missing(fileEncoding)) fileEncoding="" else fileEncoding=fileEncoding
-if (missing(Level)) Level=NULL else Level=Level
-if (missing(Taxon)) Taxon=NULL else Taxon=Taxon
 
 lentih<-length(variables)
 if(lentih>12){
@@ -234,7 +193,7 @@ if(devact==3){
 dev.off()
 }
 
-iplot(x=datosFFF$Pixel.X,y=datosFFF$Pixel.Y, pixs=pixs, xlab=xlab, 
+IDPmisc::iplot(x=datosFFF$Pixel.X,y=datosFFF$Pixel.Y, pixs=pixs, xlab=xlab, 
 ylab=ylab, cex.lab=cex.labS, font.lab=font.lab,colramp = colramp, cex = 1,
 legend = TRUE, d.legend = 1, nlab.xaxis = nlab.xaxis, nlab.yaxis = nlab.yaxis,
 minL.axis = minL.axis, las = las, border = border,oma = c(5,4,1,0)+0.1, tcl= tcl, family=family)
