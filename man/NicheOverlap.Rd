@@ -1,5 +1,6 @@
 \author{Cástor Guisande González, Universidad de Vigo, Spain.}
 \name{NicheOverlap}
+\encoding{latin1}
 \alias{NicheOverlap}
 \title{Niche overlap between two taxa}
 \description{
@@ -61,6 +62,7 @@ counting the overlapping pixels.
 \value{A plot shows the values of niche overlap for both taxa and the overlapping
 area.}
 \examples{
+\dontrun{
 
 data(Polar.coordinates)
 
@@ -69,6 +71,6 @@ Taxon2="Panthera leo")
 
 #Remove the data set
 rm(Polar.coordinates)
-
+}
 }
 \keyword{NicheOverlap}

@@ -1,5 +1,6 @@
 \author{Cástor Guisande González, Universidad de Vigo, Spain.}
 \name{Niche}
+\encoding{latin1}
 \alias{Niche}
 \title{Niche}
 \description{
@@ -72,7 +73,7 @@ Pelayo-Villamil, P., Manjarrés-Hernández, A., Vaamonde, A. & Granado-Lorencio, C
 
 Hijmans, R.J., Cameron, S.E., Parra, J.L., Jones, P.G. and Jarvis, A. (2005)Very high resolution interpolated climate surfaces for global land areas. \emph{International Journal of Climatology}, 25, 1965-1978.
 
-IUCN (2012) The IUCN Red List of Threatened Species. Version 2012.2. \url{http://www.iucnredlist.org}. Downloaded on 17 October 2012.
+IUCN (2012) The IUCN Red List of Threatened Species. Version 2012.2. \url{https://www.iucnredlist.org}. Downloaded on 17 October 2012.
 }
 \examples{
 

@@ -86,7 +86,7 @@ begin.time<-Sys.time()
 begin.times <- format(begin.time, "%b %d, %Y at %X") 
 ZZ[2,1]<-"Estimating the niche...."
 ZZ[3,1]<-begin.times
-write.table(ZZ,"Inf.txt", row.names=FALSE,col.names=FALSE)
+#write.table(ZZ,"Inf.txt", row.names=FALSE,col.names=FALSE)
 
 
 #Standardization 1 to -1
@@ -183,7 +183,7 @@ colnames(datosFF)[kkk]<-"Longitude"
 }
 }
 
-write.table(15,"Pointsize.dat", row.names=FALSE,col.names=FALSE)
+#write.table(15,"Pointsize.dat", row.names=FALSE,col.names=FALSE)
 
 
 
@@ -236,7 +236,7 @@ begin.time<-Sys.time()
 begin.times <- format(begin.time, "%b %d, %Y at %X") 
 ZZ[2,1]<-"Select the pixels just by clicking four times on the graph when a cross appears...."
 ZZ[3,1]<-begin.times
-write.table(ZZ,"Inf.txt", row.names=FALSE,col.names=FALSE)
+#write.table(ZZ,"Inf.txt", row.names=FALSE,col.names=FALSE)
 
 point<-as.data.frame(locator(4))
 hh<-length(point)
@@ -304,20 +304,20 @@ Env<-summary(datos3[,c(10:y[2])])
 #Output files
 
 if(dec=="."){
-write.csv(x=datos4,file = file1, fileEncoding = fileEncoding,
-row.names=row.names,na=na)
-write.csv(x=Env,file = file2, fileEncoding = fileEncoding,
-row.names=row.names,na=na)
-write.csv(x=datosFF,file = file3, fileEncoding = fileEncoding,
-row.names=row.names,na=na)
+#write.csv(x=datos4,file = file1, fileEncoding = fileEncoding, #row.names=row.names,na=na)
+#write.csv(x=Env,file = file2, fileEncoding = fileEncoding,
+#row.names=row.names,na=na)
+#write.csv(x=datosFF,file = file3, fileEncoding = fileEncoding,
+#row.names=row.names,na=na)
 }
 else{
-write.csv2(x=datos4,file = file1, fileEncoding = fileEncoding,
-row.names=row.names,na=na)
-write.csv2(x=Env,file = file2, fileEncoding = fileEncoding,
-row.names=row.names,na=na)
-write.csv2(x=datosFF,file = file3, fileEncoding = fileEncoding,
-row.names=row.names,na=na)
+#write.csv2(x=datos4,file = file1, fileEncoding = fileEncoding,
+#row.names=row.names,na=na)
+#write.csv2(x=Env,file = file2, fileEncoding = fileEncoding,
+#row.names=row.names,na=na)
+#write.csv2(x=datosFF,file = file3, fileEncoding = fileEncoding,
+3
+#row.names=row.names,na=na)
 }
 rm(datosFF)
 rm(Env)

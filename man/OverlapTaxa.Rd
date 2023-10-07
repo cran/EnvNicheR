@@ -1,5 +1,6 @@
 \author{Cástor Guisande González, Universidad de Vigo, Spain.}
 \name{OverlapTaxa}
+\encoding{latin1}
 \alias{OverlapTaxa}
 \title{Niche overlap among all species within a taxa}
 \description{
@@ -46,6 +47,8 @@ hours.
 the species for the taxonomic level selected by the user.}
 \examples{
 
+\dontrun{
+
 data(Polar.coordinates)
 
 OverlapTaxa(data=Polar.coordinates, Level="Genus")
@@ -53,5 +56,6 @@ OverlapTaxa(data=Polar.coordinates, Level="Genus")
 #Remove the data set
 rm(Polar.coordinates)
 
+}
 }
 \keyword{Polar.coordinates}
